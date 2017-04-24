@@ -28,8 +28,8 @@ class FractalServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('laravel-fractal', function (...$arguments) {
-            return fractal(...$arguments);
+        $this->app->singleton('laravel-fractal', function () {
+            return fractal(func_get_args());
         });
 
         $this->app->alias('laravel-fractal', Fractal::class);

@@ -1,6 +1,6 @@
 {
     "name": "spatie/laravel-fractal",
-    "description": "An easy to use Fractal integration for Laravel applications",
+    "description": "A Fractal service provider for Laravel and Lumen",
     "keywords": [
         "spatie",
         "laravel-fractal",
@@ -20,11 +20,17 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:Rareloop/fractalistic.git"
+        }
+    ],
     "require": {
-        "php" : "^5.6|^7.0",
+        "php" : "^5.5|^7.0",
         "illuminate/contracts": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
         "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
-        "spatie/fractalistic": "^1.0"
+        "spatie/fractalistic": "dev-master#80f22f3c286e6a89906dabe2df8cc46a11707819"
     },
     "require-dev": {
         "orchestra/testbench": "~3.2.0|3.3.0|~3.4.0",
